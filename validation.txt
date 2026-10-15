@@ -1,0 +1,26 @@
+Validation completed: 2026-10-15 (Asia/Shanghai).
+
+Tested on a COPY of the installed Steam 11.5 archive with Chinese 0.3.2 and HoldKeys 1.3.0.
+After the copy tests, the add-on was installed in the actual game with user approval.
+
+PASS: focused shortcut registration and blur/close cleanup.
+PASS: repeat-key debounce and idempotent initialization.
+PASS: completed page reload cancels the recovery timer.
+PASS: stalled reload recreates the renderer once after 8 seconds.
+PASS: unresponsive window and reload-error recovery branches.
+PASS: renderer exit reason logging and application shutdown cleanup.
+PASS: 503 packed archive entries retained byte-for-byte.
+PASS: 260 external-file descriptors retained without changes.
+PASS: main.js differs only by the recovery hook; exactly one module is added.
+PASS: patched main.js and recovery module parse as JavaScript.
+PASS: installer Check recognizes its installed archive hash.
+PASS: uninstall restores the exact original archive SHA-256.
+
+PASS on the real game: Electron 10.4.7 loaded the recovery module.
+PASS on the real game: F5 produced manual-recovery and page-loaded log events.
+PASS on the real game: the same native window remained open and displayed the game after reloading.
+PASS on the real game: Chinese UI and the HoldKeys panel remained present.
+Note: the alternate shortcut may be unavailable when another application has registered it. F5 registered successfully in the verified environment.
+
+Not yet verified: recovery from a genuine white-screen crash or the hard-recovery fallback in the real game.
+The root cause of the original white screen has not been established or fixed by this add-on.

@@ -1,0 +1,10 @@
+{
+  "name": "ad-white-screen-recovery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Focused F5 page reload and renderer recovery for Antimatter Dimensions Steam Windows 11.5",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/recovery.test.cjs"
+  }
+}

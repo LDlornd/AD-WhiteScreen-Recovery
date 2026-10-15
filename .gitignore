@@ -1,0 +1,11 @@
+node_modules/
+*.asar
+*.asar.*
+*.zip
+*.log
+*.dmp
+state.json
+.env
+.env.*
+work/
+Local Storage/
